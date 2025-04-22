@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,28 +60,40 @@
 
     /* Logos com borda tecnológica */
     .partner-logo {
-      padding: 20px 40px;
       max-width: 80%;
-      background: #fff;
+      /* background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
       transition: transform 0.3s ease;
+      max-height: 80px; /* altura padrão */
+      object-fit: contain; /* mantém proporção sem cortar */
+      width: auto;
+      margin: 0 auto;
+      display: block;
+      padding: 10px 0; /* espaço superior e inferior */
+
+
     }
+
 
     .partner-logo:hover {
       transform: scale(1.05); /* Zoom sutil ao passar o mouse */
     }
 
-    /* Botão com efeito tech */
     .btn-primary {
-      background: linear-gradient(45deg, #1e90ff, #00b7ff);
-      border: none;
+      background: rgba(255, 255, 255, 0);
+      border: 1px solid #bad152;
+      padding: 10px 20px;
+      border-radius: 5px;
       transition: all 0.3s ease;
+      color: #bad152;
     }
 
     .btn-primary:hover {
-      background: linear-gradient(45deg, #00b7ff, #1e90ff);
-      box-shadow: 0 4px 15px rgba(0, 183, 255, 0.4);
+      background: #bad152;
+      border: 1px solid #bad152;
+      box-shadow: 0 4px 15px #bad152;
+      color: white;
     }
   </style>
 </head>
@@ -92,14 +104,14 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">JAAP</h1>
+        <h1 class="sitename">JA Alumni Portugal</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero">Home</a></li>
           <li><a href="about.html">Sobre nós</a></li>
-          <li><a href="index.html#features-details">Projetos</a></li>
+          <li><a href="events.html">Eventos</a></li>
           <li><a href="parceiros.html" class="active">Parceiros</a></li>
           <li><a href="alumni.html">Alumni</a></li>
           <li><a href="index.html#contact">Contato</a></li>
@@ -115,7 +127,6 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Parceiros</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -125,108 +136,64 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Partners Section -->
-    <section id="partners" class="partners section">
-      <div class="container" data-aos="fade-up">
-        <!-- Become a Partner Section -->
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <div class="partner-box text-center" data-aos="fade-up" data-aos-delay="50">
-              <h3>Faça Parte da Nossa Rede de Parceiros</h3>
-              <p>
-                Junte-se à Junior Achievement Alumni Portugal e ajude-nos a capacitar a próxima geração de líderes e empreendedores. Seja uma empresa, instituição educacional ou organização comunitária, sua parceria pode fazer a diferença. Clique abaixo para saber como começar!
-              </p>
-              <a href="index.html#contact" class="btn btn-primary">Torne-se Parceiro</a>
-            </div>
-          </div>
-        </div><!-- End Become a Partner Section -->
+<!-- Partners Section -->
+<section id="partners" class="partners section bg-light py-5">
+  <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
-          <div class="col-lg-12">
-            <h2 class="text-center mb-4">Nossos Parceiros</h2>
-            <p class="text-center mb-5">
-              A Junior Achievement Alumni Portugal (JAAP) tem o privilégio de contar com uma rede de parceiros estratégicos que compartilham nossa missão de inspirar e preparar jovens para um futuro de sucesso. Esses parceiros, que incluem empresas, instituições educacionais e organizações comunitárias, desempenham um papel essencial no apoio aos nossos projetos e na ampliação do impacto das nossas iniciativas.
-            </p>
-          </div>
-
-          <!-- Partner Categories -->
-          <div class="col-lg-6">
-            <div class="partner-box" data-aos="fade-up" data-aos-delay="100">
-              <h3>Empresas Associadas</h3>
-              <p>
-                Colaboramos com empresas líderes em diversos setores que fornecem recursos, voluntários e mentoria aos nossos programas. Essas parcerias permitem que os jovens tenham contato direto com o mundo empresarial, desenvolvendo competências em empreendedorismo, literacia financeira e preparação para o trabalho. Exemplos incluem:
-              </p>
-              <ul>
-                <li><strong>Banco Santander:</strong> Apoia iniciativas de literacia financeira e mentoria.</li>
-                <li><strong>EDP:</strong> Contribui com projetos focados em sustentabilidade e inovação.</li>
-                <li><strong>Galp:</strong> Patrocina programas de empreendedorismo juvenil.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="partner-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Instituições Educacionais</h3>
-              <p>
-                Trabalhamos em conjunto com escolas, universidades e outras instituições para integrar nossos programas ao ambiente acadêmico, oferecendo aos alunos experiências práticas que complementam sua formação. Parceiros como a <strong>Porto Business School</strong> ajudam a aproximar a teoria da prática.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="partner-box" data-aos="fade-up" data-aos-delay="300">
-              <h3>Organizações Comunitárias</h3>
-              <p>
-                Contamos com o apoio de entidades locais, como a <strong>Câmara Municipal de Lisboa</strong>, que nos ajudam a promover eventos e competições regionais, fortalecendo o impacto da JAAP nas comunidades onde atuamos.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="partner-box" data-aos="fade-up" data-aos-delay="400">
-              <h3>Torne-se um Parceiro</h3>
-              <p>
-                Interessado em fazer parte da nossa rede? Seja uma empresa, instituição ou organização, sua colaboração pode transformar vidas. Entre em contato conosco para explorar como podemos trabalhar juntos para inspirar a próxima geração de líderes e empreendedores.
-              </p>
-              <a href="index.html#contact" class="btn btn-primary">Saiba Mais</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Partner Logos -->
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <h4>Alguns dos Nossos Parceiros</h4>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <img src="assets/img/partners/Santander_Logo.webp" class="img-fluid partner-logo" alt="Santander">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <img src="assets/img/partners/edp-renovaveis.webp" class="img-fluid partner-logo" alt="EDP">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <img src="assets/img/partners/Galp-Logo-500x281.webp" class="img-fluid partner-logo" alt="Galp">
-          </div>
-          <div class="col-lg-3 col-md-4 col-6">
-            <img src="assets/img/partners/UBI-Business-School-Logo.webp" class="img-fluid partner-logo" alt="Porto Business School">
-          </div>
-        </div>
+    <!-- Título e Introdução -->
+    <div class="row mb-5 text-center">
+      <h2 class="mb-3" style="text-align: left; color: #bad152;">PARCERIAS COM PROPÓSITO E IMPACTO</h2>
+      <p class="lead" style="text-align: left;">
+        O impacto da JA Alumni Portugal é resultado de parcerias de apoio com empresas e pessoas. Acreditamos que as melhores parcerias surgem da partilha de valores e da visão comum: <span style="color: #bad152;">preparar a próxima geração de líderes e empreendedores.</span> <br><br>Procuramos entidades com princípios sólidos, que como nós, ambicionam causar um <span style="color: #bad152;">impacto positivo e duradouro na sociedade.</span> <br><br>Estamos completamente disponíveis para explorar possibilidades de colaboração por isso contacte-nos para discutir como podemos, juntos, fazer a diferença!
+      </p>
+      <div class="col-12 text-center mt-4">
+        <a href="#" class="btn btn-primary">Torne-se Parceiro</a>
       </div>
-    </section><!-- End Partners Section -->
-  </main>
+    </div>
+
+
+    <!-- Logos dos Parceiros -->
+    <div class="row mt-5">
+      <div class="col-12 text-left mb-3">
+        <h5><span style=" color: #00b7ff;">NOSSOS PARCEIROS</span></h5>
+      </div>
+      
+      <ul class="row list-unstyled">
+        <li class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center logo-spacing" style="margin-bottom: 20px;">
+          <img src="assets/img/partners/Logo+JAP+2024_2025_Versão+Original.png" class="partner-logo img-fluid" alt="Santander">
+        </li>
+        <li class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center logo-spacing">
+          <img src="assets/img/partners/hive_group_logo.jpeg" class="partner-logo img-fluid" alt="Hive Group">
+        </li>
+        <li class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center logo-spacing">
+          <img src="assets/img/partners/Santander_Logo.webp" class="partner-logo img-fluid" alt="Santander">
+        </li>
+        <li class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center logo-spacing">
+          <img src="assets/img/partners/edp-renovaveis.webp" class="partner-logo img-fluid" alt="EDP">
+        </li>
+
+      </ul>
+      
+      
+      
+    </div>
+  </div>
+</section>
+
 
   <footer id="footer" class="footer position-relative light-background">
+
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Junior Achievement Alumni Portugal</span>
+            <span class="sitename">JA Alumni Portugal</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Parque Eduardo VII</p>
             <p>1070-051 Lisboa</p>
-            <p class="mt-3"><strong>Telefone:</strong> <span>+351 765 432 890</span></p>
-            <p><strong>Email:</strong> <span>JAAP24@exemple.com</span></p>
+            <!-- <p class="mt-3"><strong>Telefone:</strong> <span>+351 765 432 890</span></p> -->
+            <p><strong>Email:</strong> <span>jaalumnipt@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://gatheralumni.org/topics/15496/home" target="_blank">
@@ -241,19 +208,23 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links Úteis</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="index.html#features-details">Projetos</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
             <li><a href="#">Termos de Serviço</a></li>
             <li><a href="#">Política de Privacidade</a></li>
           </ul>
         </div>
+
       </div>
     </div>
 
     <div class="container copyright text-center mt-2">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Junior Achievement Alumni Portugal</strong><span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JA Alumni Portugal</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
     </div>
+
   </footer>
 
   <!-- Scroll Top -->

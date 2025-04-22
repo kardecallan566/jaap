@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sobre Nós - Junior Achievement Alumni Portugal</title>
-  <meta name="description" content="Descubra eventos e programas da Junior Achievement Alumni Portugal para jovens de 16 a 30 anos. Junte-se a nós e faça parte de uma comunidade que inspira o futuro!">
-  <meta name="keywords" content="Junior Achievement, alumni, Portugal, eventos, jovens, empreendedorismo, carreira">
+  <title>Emerge 2024 - JA Global Alumni Conference | Junior Achievement Alumni Portugal</title>
+  <meta name="description"
+    content="Emerge 2024: JA Global Alumni Conference em Porto, Portugal. Mais de 350 participantes de 27 países reunidos para uma semana inesquecível de partilha, inspiração e conexão.">
+  <meta name="keywords" content="Emerge, JA Global Alumni Conference, Junior Achievement, alumni, Portugal, Porto, empreendedorismo, networking">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,49 +26,274 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../seomaster-1.0.0/css/style.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/teste.css" rel="stylesheet">
   <link href="assets/css/teste2.css" rel="stylesheet">
 
-  <!-- Custom CSS for Events Section -->
+  <!-- Custom CSS for Emerge Section -->
   <style>
-    .events-section {
-      padding: 60px 0;
-      background: #f5f7fa;
+    /* Hero Section Styles */
+    .emerge-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/emerge-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 120px 0;
+      margin-bottom: 60px;
+      position: relative;
     }
 
-    .event-box {
+    .emerge-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .emerge-hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Stats Section */
+    .stat-box {
       background: #fff;
-      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      border-bottom: 4px solid #0d6efd;
     }
 
-    .event-box h3 {
-      color: #1e90ff;
+    .stat-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-box h4 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
+    .stat-box p {
+      font-size: 1.1rem;
+      margin: 0;
+      font-weight: 500;
+      color: #333;
+    }
+
+    /* Timeline Section */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #0d6efd;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      border-radius: 10px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -12px;
+      background-color: white;
+      border: 4px solid #0d6efd;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item:nth-child(even)::after {
+      left: -12px;
+    }
+
+    /* Testimonial Section */
+    .testimonial {
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      padding: 40px;
+      position: relative;
+      margin-top: 60px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial::before {
+      content: '\201C';
+      font-family: Georgia, serif;
+      font-size: 90px;
+      position: absolute;
+      top: -40px;
+      left: 20px;
+      color: #0d6efd;
+      opacity: 0.3;
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
       font-weight: 600;
+      color: #333;
     }
 
-    .btn-primary {
-      background: linear-gradient(45deg, #1e90ff, #00b7ff);
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
+    /* Gallery Section */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
     }
 
-    .btn-primary:hover {
-      background: linear-gradient(45deg, #00b7ff, #1e90ff);
-      box-shadow: 0 4px 15px rgba(0, 183, 255, 0.4);
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
-    .event-img {
-      border-radius: 10px;
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: white;
+      padding: 60px 0;
+      border-radius: 15px;
+      margin: 60px 0;
+    }
+
+    .cta-section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-cta {
+      background-color: white;
+      color: #0d6efd;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      border: 2px solid white;
+    }
+
+    .btn-cta:hover {
+      background-color: transparent;
+      color: white;
+    }
+
+    /* Organizers Section */
+    .organizers-section {
+      padding: 60px 0;
+    }
+
+    .organizer-logo {
+      max-height: 80px;
       max-width: 100%;
-      height: auto;
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+
+    .organizer-logo:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .emerge-hero {
+        padding: 80px 0;
+      }
+
+      .emerge-hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+
+      .timeline-item::after {
+        left: 18px;
+        right: auto;
+      }
     }
   </style>
 </head>
@@ -76,7 +304,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">JAAP</h1>
+        <h1 class="sitename">JA Alumni Portugal</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -96,90 +324,202 @@
   </header>
 
   <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Sobre Nós</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Sobre Nós</li>
-          </ol>
-        </nav>
+    <!-- Hero Section -->
+    <section class="emerge-hero text-center" data-aos="fade">
+      <div class="container">
+        <h1>EMERGE 2024</h1>
+        <p class="lead">JA Global Alumni Conference | Porto, Portugal</p>
+        <p>Uma semana inesquecível de partilha, inspiração e conexão global</p>
       </div>
-    </div><!-- End Page Title -->
+    </section>
 
-    <!-- Events Section -->
-    <section id="events" class="events-section">
+    <!-- Main Content Section -->
+    <section id="emerge-overview" class="section">
       <div class="container" data-aos="fade-up">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/events-jaap.jpg" class="event-img" alt="Jovens em evento da JAAP">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/emergess.jpeg" class="img-fluid rounded shadow" alt="Emerge 2024 Porto">
           </div>
-          <div class="col-lg-6">
-            <div class="event-box">
-              <h3>Participe dos Nossos Eventos!</h3>
-              <p>
-                A Junior Achievement Alumni Portugal (JAAP) oferece eventos incríveis para jovens de 16 a 30 anos que querem explorar carreiras, desenvolver habilidades e criar o futuro. Confira alguns destaques:
-              </p>
-              <ul>
-                <li><strong>Desafio Empreendedor:</strong> Competição para criar e gerir teu próprio negócio virtual, com mentores reais.</li>
-                <li><strong>Feira de Carreiras JAAP:</strong> Conecta-te com empresas e descobre oportunidades no mercado de trabalho.</li>
-                <li><strong>Workshop de Liderança:</strong> Aprende skills práticas com ex-alunos e profissionais de sucesso.</li>
-              </ul>
-              <p>
-                Seja parte da nossa comunidade de alumni e transforme tua paixão em ação. Vamos construir o futuro juntos!
-              </p>
-              <a href="index.html#contact" class="btn btn-primary">Participe Agora</a>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2>Um Evento Global em Portugal</h2>
+            <p class="lead">
+              Em agosto de 2024, Portugal teve a honra de receber um dos maiores eventos da rede JA: a JA Global Alumni Conference.
+            </p>
+            <p>
+              Organizada em conjunto pela Junior Achievement Worldwide, pela Junior Achievement Alumni Europe e pela nossa equipa, 
+              reunimos mais de 350 participantes de 27 países diferentes, vindos de todos os cantos do mundo, para uma 
+              semana inesquecível de partilha, inspiração e conexão.
+            </p>
+            <p>
+              Este evento não foi apenas um encontro, mas uma verdadeira celebração do espírito empreendedor e da 
+              colaboração internacional que define a comunidade JA.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="row text-center mb-5 g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="stat-box">
+              <h4>350+</h4>
+              <p>Participantes</p>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div class="event-box">
-              <h3>Participe dos Nossos Eventos!</h3>
-              <p>
-                A Junior Achievement Alumni Portugal (JAAP) oferece eventos incríveis para jovens de 16 a 30 anos que querem explorar carreiras, desenvolver habilidades e criar o futuro. Confira alguns destaques:
-              </p>
-              <ul>
-                <li><strong>Desafio Empreendedor:</strong> Competição para criar e gerir teu próprio negócio virtual, com mentores reais.</li>
-                <li><strong>Feira de Carreiras JAAP:</strong> Conecta-te com empresas e descobre oportunidades no mercado de trabalho.</li>
-                <li><strong>Workshop de Liderança:</strong> Aprende skills práticas com ex-alunos e profissionais de sucesso.</li>
-              </ul>
-              <p>
-                Seja parte da nossa comunidade de alumni e transforme tua paixão em ação. Vamos construir o futuro juntos!
-              </p>
-              <a href="index.html#contact" class="btn btn-primary">Participe Agora</a>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-box">
+              <h4>27</h4>
+              <p>Países Representados</p>
             </div>
           </div>
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/events-jaap.jpg" class="event-img" alt="Jovens em evento da JAAP">
-          </div>
-
-
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/events-jaap.jpg" class="event-img" alt="Jovens em evento da JAAP">
-          </div>
-          <div class="col-lg-6">
-            <div class="event-box">
-              <h3>Participe dos Nossos Eventos!</h3>
-              <p>
-                A Junior Achievement Alumni Portugal (JAAP) oferece eventos incríveis para jovens de 16 a 30 anos que querem explorar carreiras, desenvolver habilidades e criar o futuro. Confira alguns destaques:
-              </p>
-              <ul>
-                <li><strong>Desafio Empreendedor:</strong> Competição para criar e gerir teu próprio negócio virtual, com mentores reais.</li>
-                <li><strong>Feira de Carreiras JAAP:</strong> Conecta-te com empresas e descobre oportunidades no mercado de trabalho.</li>
-                <li><strong>Workshop de Liderança:</strong> Aprende skills práticas com ex-alunos e profissionais de sucesso.</li>
-              </ul>
-              <p>
-                Seja parte da nossa comunidade de alumni e transforme tua paixão em ação. Vamos construir o futuro juntos!
-              </p>
-              <a href="index.html#contact" class="btn btn-primary">Participe Agora</a>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-box">
+              <h4>7</h4>
+              <p>Dias de Conexão Global</p>
             </div>
           </div>
+        </div>
 
+        <!-- Highlights Section -->
+        <div class="row mb-5">
+          <div class="col-12 text-center mb-4">
+            <h2>Destaques do Evento</h2>
+            <p class="lead">Uma semana repleta de momentos inesquecíveis e aprendizados valiosos</p>
+          </div>
+          
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="bi bi-people-fill text-primary me-2"></i>Networking Global</h3>
+                <p class="card-text">
+                  Conexões significativas entre alumni de diferentes culturas e backgrounds, criando uma rede 
+                  verdadeiramente global de jovens empreendedores e líderes.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4" data-aos="fade-left">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="bi bi-lightbulb-fill text-primary me-2"></i>Workshops Inovadores</h3>
+                <p class="card-text">
+                  Sessões interativas conduzidas por especialistas em empreendedorismo, liderança, inovação e 
+                  desenvolvimento pessoal e profissional.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="bi bi-mic-fill text-primary me-2"></i>Palestrantes Inspiradores</h3>
+                <p class="card-text">
+                  Líderes de renome compartilharam suas histórias, desafios e sucessos, inspirando a próxima 
+                  geração de empreendedores.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4" data-aos="fade-left">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Experiência Cultural</h3>
+                <p class="card-text">
+                  Imersão na rica cultura portuguesa, com visitas a locais emblemáticos do Porto e experiências 
+                  gastronômicas típicas da região.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <div class="testimonial text-center" data-aos="fade-up">
+              <p class="testimonial-text">
+                "Organizar este evento foi um enorme desafio, e, ao mesmo tempo, uma das experiências mais marcantes para a nossa equipa. 
+                Aprendemos, acima de tudo, que o verdadeiro impacto só se constrói com trabalho em equipa, confiança e dedicação. 
+                Crescemos enquanto equipa e enquanto líderes, e levamos connosco a certeza de que juntos conseguimos ir mais longe."
+              </p>
+              <p class="testimonial-author">— Equipa JA Alumni Portugal</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="row mb-5">
+          <div class="col-12 text-center mb-4">
+            <h2>Galeria de Momentos</h2>
+            <p class="lead">Reviva alguns dos momentos mais marcantes do EMERGE 2024</p>
+          </div>
+          
+          <div class="col-12">
+            <div class="gallery-container" data-aos="fade-up">
+              <div class="gallery-item">
+                <a href="assets/img/emerge-gallery-1.jpg" class="glightbox">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Cerimônia de abertura">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="assets/img/emerge-gallery-2.jpg" class="glightbox">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Workshop de liderança">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="assets/img/emerge-gallery-3.jpg" class="glightbox">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Networking entre participantes">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="assets/img/emerge-gallery-4.jpg" class="glightbox">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Palestra principal">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Organizers Section -->
+        <div class="row organizers-section">
+          <div class="col-12 text-center mb-4">
+            <h2>Organizadores</h2>
+            <p class="lead">Um evento realizado em parceria por:</p>
+          </div>
+          
+          <div class="col-md-4 text-center mb-4" data-aos="fade-up">
+            <img src="/placeholder.svg?height=80&width=200" alt="Junior Achievement Worldwide" class="organizer-logo">
+            <p class="mt-3">Junior Achievement Worldwide</p>
+          </div>
+          
+          <div class="col-md-4 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+            <img src="/placeholder.svg?height=80&width=200" alt="Junior Achievement Alumni Europe" class="organizer-logo">
+            <p class="mt-3">Junior Achievement Alumni Europe</p>
+          </div>
+          
+          <div class="col-md-4 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="/placeholder.svg?height=80&width=200" alt="Junior Achievement Alumni Portugal" class="organizer-logo">
+            <p class="mt-3">Junior Achievement Alumni Portugal</p>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="row">
+          <div class="col-12">
+            <div class="cta-section text-center" data-aos="fade-up">
+              <h3>Faça Parte da Nossa Comunidade</h3>
+              <p>
+                Quer participar de eventos transformadores como o EMERGE? Junte-se à rede JA Alumni Portugal 
+                e conecte-se com jovens empreendedores e líderes de todo o mundo.
+              </p>
+              <a href="index.html#contact" class="btn btn-cta">Entre em Contacto</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section><!-- End Events Section -->
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -187,30 +527,32 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Junior Achievement Alumni Portugal</span>
+            <span class="sitename">JA Alumni Portugal</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Parque Eduardo VII</p>
             <p>1070-051 Lisboa</p>
-            <p class="mt-3"><strong>Telefone:</strong> <span>+351 765 432 890</span></p>
-            <p><strong>Email:</strong> <span>JAAP24@exemple.com</span></p>
+            <p><strong>Email:</strong> <span>jaalumnipt@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://gatheralumni.org/topics/15496/home" target="_blank">
-              <img src="https://d1c2gz5q23tkk0.cloudfront.net/shrine_store/uploads/networks/489/networks/489/large-759a4befc7c4ead5b06ca3acd137c346.webp" alt="Gather" style="height: 24px;">
+              <img
+                src="https://d1c2gz5q23tkk0.cloudfront.net/shrine_store/uploads/networks/489/networks/489/large-759a4befc7c4ead5b06ca3acd137c346.webp"
+                alt="Gather" style="height: 24px;">
             </a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/jaalumnipt" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/junior-achievement-alumni-portugal/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/junior-achievement-alumni-portugal/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links Úteis</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="index.html#features-details">Projetos</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
             <li><a href="#">Termos de Serviço</a></li>
             <li><a href="#">Política de Privacidade</a></li>
           </ul>
@@ -219,12 +561,15 @@
     </div>
 
     <div class="container copyright text-center mt-2">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Junior Achievement Alumni Portugal</strong><span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JA Alumni Portugal</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+      </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
